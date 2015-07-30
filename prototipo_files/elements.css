@@ -1,0 +1,84 @@
+
+
+    /*======================Required====================================*/
+    /*tabs*/
+    .xv-tab-control{
+        position: relative;
+    }
+    .xv-tab-control{
+        margin: 0;
+        padding: 0;
+        clear: both;
+        display: block;
+        margin-bottom: -1px;
+    }
+    .xv-tab-content{
+        padding: 15px;
+        border: 1px solid #585858;
+    }
+    .xv-tab-control li{
+        position: relative;
+        list-style: none;
+        display: block;
+        float: left;
+        border: 1px solid #585858;
+        margin-right: -1px;
+    }
+    .xv-tab-control li:first-child{
+        border-radius: 8px 0 0 0;
+    }
+    .xv-tab-control li:last-child{
+        border-radius: 0 8px 0 0;
+    }
+    .xv-tab-control li a{
+        display: block;
+        text-decoration: none;
+        color: #585858;
+        font-weight: bold;
+        font-size: 1.5em;
+        padding: 10px 25px;
+    }
+    .xv-tab-control li.active{
+        border-color: #2BB7FF;
+        background: #2BB7FF;
+        z-index: 10;
+    }
+    .xv-tab-control li.active a{
+        color: #fff;
+    }
+    .xv-tab-pane{
+        display: none;
+    }
+
+    /*Accordions*/
+    .xv-accordion-widget{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .xv-acc-header{
+        display: block;
+        text-decoration: none;
+        background: #78BCEE;
+        padding: 15px;
+        border-radius: 2px;
+        color: #fff;
+
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .xv-acc-header:hover{
+        background: #4CA5E8;
+        color: #fff;
+    }
+    .xv-acc-block.active .xv-acc-header{
+        color: #fff;
+        background: #274DA8;
+    }
+    .xv-acc-content{
+        display: none;
+        padding: 15px;
+    }
+
+    .xv-acc-block{
+       margin-bottom: 1px;
+    }

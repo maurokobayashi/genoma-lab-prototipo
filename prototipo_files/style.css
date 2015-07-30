@@ -1,0 +1,1031 @@
+/*
+ Theme Name:   Clinix
+ Description:  Layers Medical Child Theme
+ Author:       xvelopers
+ Template:     layerswp
+ Version:      1.0.0
+ License:      GPL 2.0
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 1 : General & helper styles
+| 2 : Menu Styles
+| 3 : Preheader
+| 4 : Clinix Widgets
+| 5 : Blog
+| 6 : Sidebar
+| 7 : Woocommerce
+| 8 : Extra Plugin
+| 9 : Mobile Styles
+|
+| ----------------------------------------------------------------------------------------------
+*/
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 1 : General & helper styles
+| ----------------------------------------------------------------------------------------------
+*/
+body {
+    font: 14px "Open Sans", Arial, Helvetica, sans-serif;
+    color: #696969;
+}
+h1, h2, h3, h4, h5, .heading{
+    font-weight: 600;
+    color: #375ebc;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 14px;
+}
+p{
+    font-size: 14px;
+}
+pre {
+    overflow: auto;
+}
+
+input[type="button"], input[type="submit"], button, .button, .form-submit input[type="submit"], .invert input[type="button"], .invert input[type="submit"], .invert button, .invert .button, .invert .form-submit input[type="submit"] {
+    background-color: #375EBC !important;
+    color: #fff !important;
+     font-weight: normal;
+
+       padding: 8px 18px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.widget .button.btn-medium {
+    margin-top: 20px;
+}
+.title-container .heading {
+    color: #323232;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+.title-container .title {
+    padding: 2% 20px;
+}
+.single .section-title.large .heading {
+    font-size: 3rem;
+}
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 2 : Menu Styles
+| ----------------------------------------------------------------------------------------------
+*/
+.nav-horizontal li a {
+   font-weight: 600;
+}
+.sub-menu{
+    border: none;
+    background: #fffs;
+    border-top: 5px solid #375ebc;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 18px;
+}
+.sub-menu li{
+  width: 160px;
+border-bottom: 1px solid #f3f3f3;
+}
+.sub-menu li a:hover {
+      background: #fff none repeat scroll 0 0;
+    color: #78bcee;
+}
+.sub-menu li a {
+    padding: 6px 10px;
+    font-weight: normal;
+}
+
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 3 : Preheader
+| ----------------------------------------------------------------------------------------------
+*/
+.header-secondary {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #eee;
+}
+.invert .nav > li > a {
+    color: #323232;
+}
+.top-contact > li {
+    display: inline;
+    margin-left: 40px;
+    color: #323232;
+}
+.top-contact > li > a {
+    color: #323232;
+    font-size: .9em;
+}
+.top-contact i {
+    color: #78bcee;
+    margin-right: 10px;
+}
+.button-top {
+    background: #5EAEEA;
+    padding: 5px 15px;
+    font-size: 13px;
+    color: #fff;
+}
+.invert .nav > li > a:hover{
+    color: #5EAEEA;
+}
+
+.content-vertical-massive{
+    padding-top: 0;
+}
+.section-title .excerpt{
+    font-size: 16px;
+}
+.header-left .logo{
+    position: absolute;
+    top: 55%;
+    left: 20px;
+    transform: translateY(-55%);
+    -webkit-transform: translateY(-55%);
+    -moz-transform: translateY(-55%);
+    -o-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+}
+.header-site{
+    position: relative;
+    border-bottom: 5px solid #3255AA;
+}
+.header-site > .container{
+    position: relative;
+}
+.header-site::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: -5px;
+    background: url(pattern.png) no-repeat center center;
+}
+.title-container {
+    background: url(bg.jpg);
+}
+
+.social li {
+    margin-left: -3px;
+}
+.nav-horizontal .social li i{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #354863;
+    color: #fff;
+    border-radius: 50%;
+}
+.nav-horizontal .social li i.fa-facebook{
+    background: #45619D;
+}
+.nav-horizontal .social li i.fa-twitter{
+    background: #5EA9DD;
+}
+.social {
+    margin: 5px 0 0 22px;
+}
+.nav .pull-right{
+    line-height : 0;
+}
+
+.i-facebook {
+    background: url(assets/images/fb.png) no-repeat center center;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.i-twitter{
+        background: url(assets/images/tw.png) no-repeat center center;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.slide .heading {
+    letter-spacing: 0 !important;
+}
+
+.slide .excerpt {
+    background: none repeat scroll 0 0 #4ca5e8;
+    color: #fff !important;
+    padding: 22px 20px;
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+}
+.slide .image-left .copy-container {
+    float: right;
+    width: 50%;
+}
+.slide .button{
+    background: none repeat scroll 0 0 #375EBC !important;
+    color: #fff !important;
+    /*font-size: 20px;*/
+    font-weight: bolder !important;
+    margin-top: 12px !important;
+    padding: 12px 20px !important;
+    border-radius: 3px;
+}
+.slide .button:hover{
+    background: none repeat scroll 0 0 #4CA5E8 !important;
+}
+
+.search {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0, 0.3);
+    text-align: left;
+}
+.search form {
+    display: table;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+.search i {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 1.3em;
+    color: #78BCEE;
+}
+.search input {
+    display: table-cell;
+    width: 97%;
+    color: #555;
+    font-size: 1.15em;
+    font-weight: 500;
+    letter-spacing: 0em;
+    height: 50px;
+    padding: 0 20px 0 37px;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+}
+.search form a {
+    display: table-cell;
+    width: 17%;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.all-tests {
+    margin-top: 12px;
+    text-align: center;
+}
+.all-tests a {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 4 : Clinix Widgets
+| ----------------------------------------------------------------------------------------------
+*/
+
+.clinix-service {
+    padding: 30px 15px 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.clinix-service .media .media-image {
+     position: absolute;
+
+}
+
+.clinix-service .media-body {
+    margin-top: 0;
+}
+
+.clinix-service .media-image img {
+    display: inline-block;
+}
+
+.clinix-service .heading::after {
+    content: "";
+    background: #E4F2FC;
+    height: 6px;
+    width: 58px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.clinix-service .heading {
+    padding-left: 35px;
+    padding-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 65px;
+    max-width: 170px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-top: 70px;
+}
+.section-title .heading{
+    letter-spacing:1px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+}
+.section-title .heading::after{
+    background: #78BCEE;
+    content: "";
+    height: 6px;
+    width: 110px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.layers-call2action-widget {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.layers-call2action-widget .heading::after{
+    display: none !important;
+}
+.section-title .excerpt{
+    margin-top: -20px;
+}
+.text-center.section-title .heading::after{
+    left: 50%;
+    margin-left: -55px;
+}
+.text-center.section-title .heading{
+    letter-spacing: 0;
+}
+.clinix-schedule_about .media{
+    position: relative;
+    padding: 20px 25px;
+    padding-left: 70px
+}
+.clinix-schedule_about.has-image .media-body{
+    margin-top: 0;
+}
+
+.clinix-schedule_about .media .media-image{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+.section-title .heading + .excerpt{
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+.section-title .heading + .excerpt p{
+    font-weight: 600;
+}
+.clinix-schedule_about .media .heading{
+    width: 100px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.clinix-schedule_about .media .excerpt{
+    letter-spacing:4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    margin-top: 0 !important;
+}
+.clinix-schedule_about .media .time{
+    font-size: 14px;
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    color: #fff;
+}
+.schedule_row{
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.schedule-vertical-massive {
+    margin-top: 40px;
+}
+.schedule-vertical-massive .button {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 12px 30px;
+}
+
+
+.clinix-testimonial{
+    position: relative;
+    padding: 45px 25px;
+}
+.clinix-testimonial .media-image,.clinix-testimonial .media-image img{
+    width: 65px;
+    height: 65px;
+}
+.clinix-testimonial .media-image{
+    position: absolute;
+    top: -95px;
+    right: 0px;
+}
+
+.clinix-testimonial .media{
+    overflow:  visible;
+    position: relative;
+}
+.clinix-testimonial .heading{
+    color: #375ebc;
+
+}
+.clinix-team .heading {
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    max-width: 160px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.clinix-team .heading::after {
+    content: "";
+    background: #E4F2FC;
+    height: 6px;
+    width: 58px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.clinix-team .designation{
+    color: #fff;
+    text-align: left;
+}
+.clinix-team .media-body .heading{
+    text-align: left;
+}
+.clinix-team .media-body.text-right{
+    padding-left: 15px;
+    padding-top: 40px;
+}
+
+.meta-item {
+    margin-right: 9px;
+    margin-top: 2px;
+    display: inline;
+}
+.meta-info {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 12px;
+}
+.single .meta-info{
+    border-top: none;
+}
+.thumbnail-body .heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.clinix-schedule_about.button.btn-medium,{
+    background: #4CA5E8;
+    border-radius: 1px;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 15px;
+}
+.footer-site{
+    border-top: 1px solid #999;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.footer-site .section-nav-title{
+
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    max-width: 160px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-site .section-nav-title::after {
+    content: "";
+    background: #E4F2FC;
+    height: 6px;
+    width: 58px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.tagcloud a {
+    background: #375EBC;
+    color: #fff;
+    font-size: 15px !important;
+    line-height: 3;
+    padding: 5px 10px;
+}
+.copyright{
+    position: relative;
+    padding: 15px 0 25px !important;
+}
+.copyright p {
+    font-size: 1em;
+    color: #777;
+}
+.copyright::after{
+  background: url("pattern.png") no-repeat scroll center center rgba(0, 0, 0, 0) !important;
+    top: 0px;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.row + .copyright{
+    border: none;
+}
+
+
+.layers-call2action-widget .button {
+    background: none repeat scroll 0 0 #274da8;
+    border-radius: 2px;
+    color: #fff !important;
+    float: right;
+    font-size: 20px !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 11px 34px;
+}
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 5 : Blog
+| ----------------------------------------------------------------------------------------------
+*/
+.content-main {
+    padding: 3% 20px;
+}
+.wrapper-content {
+    background: #eff2f5;
+}
+
+.post-entry {
+    background: #fff;
+    padding:1px 22px 40px;
+    margin-top: -4px;
+}
+.single article{
+
+      background: #fff;
+    padding:1px 22px 40px;
+}
+.post .section-title .heading a, .page .section-title .heading a  {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 26px;
+    letter-spacing: 0;
+}
+.post .section-title, .page .section-title{
+     margin-top: 0px;
+}
+
+.post .button, .page .button{
+    background: #4ca5e8;
+    color: #fff ;
+}
+.pagination a, .pagination span {
+    background-color: #fff;
+}
+
+.pagination .current {
+    background-color: #375ebc;
+}
+.comment-reply-link {
+    border-bottom: medium none !important;
+    float: right;
+    margin-top: -15px;
+    text-decoration: none !important;
+}
+
+.section-title .meta-info {
+    display: none;
+}
+.story .search-field {
+    float: left;
+    height: 40px;
+      margin-top: -1px;
+}
+.story .search-submit {
+    float: left;
+}
+
+.search-no-results .search-field {
+    margin-bottom: 75px;
+}
+/*
+| ----------------------------------------------------------------------------------------------
+| 6 : Sidebar
+| ----------------------------------------------------------------------------------------------
+*/
+
+.sidebar .section-nav-title{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 28px;
+}
+.sidebar .section-nav-title::after {
+    content: "";
+    background: #60A1E1;
+    height: 6px;
+    width: 58px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.well {
+background: #fff;
+}
+.sidebar .widget li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.sidebar .push-bottom-large {
+    margin-bottom: 0;
+}
+
+/* Calander Widget */
+#wp-calendar {
+    width: 100%;
+}
+#wp-calendar caption {
+    background: none repeat scroll 0 0 #375eBC;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#wp-calendar thead {
+    font-size: 10px;
+}
+#wp-calendar thead th {
+    color: #375eBC;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#wp-calendar tbody {
+    color: #aaa;
+}
+#wp-calendar tbody td {
+    background: #EFF2F5;
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+#wp-calendar tbody td:hover {
+    background: none repeat scroll 0 0 #375eBC;
+    color: #fff;
+}
+#wp-calendar tbody .pad {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+table {
+    border: none;
+    margin-bottom: 0px;
+    }
+table th{
+    border: none;
+}
+/* Multi Post Entries Widget */
+
+.latest-post {
+    padding-top: 20px;
+}
+.latest-post .recent-visual {
+    float: left;
+    height: 70px;
+    margin-right: 10px;
+    text-align: center;
+    width: 70px;
+}
+.latest-post .recent-visual img {
+    height: 70px;
+        border-radius: 50%;
+    width: 70px;
+}
+.latest-detail {
+    display: table;
+}
+.latest-post .recent-visual span {
+    color: #262626;
+    font-size: 30px;
+}
+.latest-post h2 {
+    display: table;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+.latest-detail .date-stamp {
+    color: #375EBC;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.latest-detail .date-stamp a {
+    color: #375EBC;
+    display: inline;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+
+#flicker-feed li {
+    display: inline;
+    list-style: outside none none;
+    margin: 2px;
+}
+.widget_recent_entries li{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 7 : Woocommerce
+| ----------------------------------------------------------------------------------------------
+*/
+
+.woocommerce-result-count-container {
+    background: none repeat scroll 0 0 #78bcee;
+    border: 12px solid #fff;
+    border-radius: 2px;
+    padding: 11px 12px;
+}
+
+.woocommerce-ordering select {
+    border: 2px solid #fff;
+}
+
+.products .product {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 40px 40px 20px;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.onsale {
+    background:  #4ca5e8;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 0;
+}
+.button.add_to_cart_button.product_type_simple {
+    background:  #3255aa;
+    color: #fff;
+    margin-top: 15px;
+}
+.cart_item td {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #eff2f5;
+    line-height: 4;
+}
+
+.cart_item td {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #eff2f5;
+    line-height: 4;
+}
+.woocommerce-tabs .panel {
+    background: none repeat scroll 0 0 #fff;
+    padding: 20px;
+}
+
+.woocommerce-tabs .tabs .active a {
+    background: none repeat scroll 0 0 #3255aa;
+    color: #fff;
+}
+.woocommerce-tabs .tabs a {
+    background: none repeat scroll 0 0 #78bcee;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    padding: 6px 15px;
+}
+.woocommerce-tabs .tabs li {
+    float: left;
+    margin-right: 0;
+}
+
+.woocommerce-message, .woocommerce-info{
+    background:  #78bcee;
+    border: 12px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+}
+
+.woocommerce-message a{
+    background: none repeat scroll 0 0 #375ebc;
+    color: #fff;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+
+.woocommerce-result-count {
+    color: #fff;
+}
+.cart_item td a {
+    border-bottom: medium none !important;
+    color: #474747 !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+.product-remove a {
+    margin-left: 22px;
+    margin-top: 25px;
+
+}
+.woocommerce-billing-fields, .woocommerce-shipping-fields {
+    background: none repeat scroll 0 0 #fff;
+    padding: 30px;
+}
+#order_review .payment_methods {
+    background: none repeat scroll 0 0 #fff;
+
+}
+
+#order_review .payment_box {
+    background: none repeat scroll 0 0 #4ca5e8;
+    color: #fff;
+}
+.shop_table tfoot {
+    background: none repeat scroll 0 0 #375ebc;
+    color: #fff;
+}
+ .woocommerce table th {
+  color: #fff;
+}
+.woocommerce-checkout-review-order-table thead {
+    background: none repeat scroll 0 0 #375ebc;
+}
+.cart-subtotal .amount , .order-total .amount{
+    color: #fff;
+    font-size: 16px;
+}
+.checkout_coupon {
+    background: #fff;
+}
+.showcoupon {
+    color: #fff;
+}
+.woocommerce thead {
+    background: #375ebc;
+}
+.cart_totals > table {
+    background: #4CA5E8;
+}
+
+.column.purchase-options-container.span-6 {
+    background:  #fff;
+    padding: 30px;
+}
+.thumbnails a {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    padding: 5px;
+}
+.attachment-shop_single.wp-post-image {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.product_list_widget a{
+    font-weight: normal;
+}
+.woocommerce .search-field {
+    width: 100%;
+}
+#reviews .avatar {
+    border-radius: 50%;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background:#60a1e1;
+}
+
+.ui-slider .ui-slider-range {
+    background: #eee;
+}
+/*
+| ----------------------------------------------------------------------------------------------
+| 8 : Extra Plugin
+| ----------------------------------------------------------------------------------------------
+*/
+
+.xv-owl-child .media-body{
+    margin-top: 0 !important;
+    padding: 15px;
+}
+.xv-owl-child .excerpt{
+    margin-top: 0 !important;
+}
+
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 9 : Mobile Styles
+| ----------------------------------------------------------------------------------------------
+*/
+@media(max-width:700px){
+    .clinix-team .media-body.text-right,.clinix-team .media-body{
+        padding: 10px 0 20px;
+        text-align: center !important;
+    }
+    .clinix-team .media-body .heading::after{
+        display: none !important;
+    }
+    .clinix-team .media-body .heading,.clinix-team .media-body .designation{
+        text-align: center;
+        margin: 0;
+        height: auto;
+        max-width: none;
+        width: 100%;
+    }
+    .slide  .heading::after{
+        background: none;
+    }
+}
