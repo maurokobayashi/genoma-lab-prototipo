@@ -10,7 +10,7 @@
 		<link rel="stylesheet" id="layers-child-font-css" href="./prototipo_files/css.css" type="text/css" media="all">
 		<link rel="stylesheet" id="layers-framework-css" href="./prototipo_files/framework.css" type="text/css" media="all">
 		<link rel="stylesheet" id="layers-components-css" href="./prototipo_files/components.css" type="text/css" media="all">
-		<link rel="stylesheet" id="layers-parent-style-css" href="./prototipo_files/style.css" type="text/css" media="all">
+		<link rel="stylesheet" id="layers-parent-style-css" href="./stylesheets/style.css" type="text/css" media="all">
 		<link rel="stylesheet" id="font-awesome-css" href="./prototipo_files/fontawesome.css" type="text/css" media="all">
 		<link rel="stylesheet" id="layers-responsive-css" href="./prototipo_files/responsive.css" type="text/css" media="all">
 		<link rel="stylesheet" id="layers-icon-fonts-css" href="./prototipo_files/layers-icons.css" type="text/css" media="all">
@@ -73,9 +73,9 @@
 			<div class="container clearfix">
 				<!-- LOGO : begin -->
 				<div class="logo">
-					<a href="#" class="site-logo-link" rel="home"><img src="./images/usp-logo.png" class="site-logo attachment-medium" alt="clinix" data-size="medium"></a>
+					<a href="index.html" class="site-logo-link" rel="home"><img src="./images/usp-logo.png" class="site-logo attachment-medium" alt="clinix" data-size="medium"></a>
 					<div class="site-description">
-						<h3 class="sitename sitetitle"><a href="#" style="color: #274DA8;">Laboratório de Testes Genéticos</a></h3>
+						<h3 class="sitename sitetitle"><a href="index.html" style="color: #274DA8;">Laboratório de Testes Genéticos</a></h3>
 						<p class="tagline" style="color: #4CA5E8;">CEGH-CEL</p>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 					<ul id="menu-main-1" class="menu">
 						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-94"><a href="#">Testes Disponíveis</a>
 						</li>
-						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="#">Sobre Nós</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="sobre_nos.html">Sobre Nós</a></li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-119"><a href="#">Dúvidas  Frequentes</a>
 						</li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="#">Fale Conosco</a></li>
@@ -130,7 +130,7 @@
 								        </a>
 								      </form>
 										</div>
-										<div class="all-tests"><a href="/testes">ou veja todos os testes disponíveis</a></div>
+										<div class="all-tests"><a href="#">ou veja todos os testes disponíveis</a></div>
 									</div>
 								</div>
 							</div> <!-- .container -->
@@ -151,7 +151,7 @@
 								        </a>
 								      </form>
 										</div>
-										<div class="all-tests"><a href="/testes">ou veja todos os testes disponíveis</a></div>
+										<div class="all-tests"><a href="#">ou veja todos os testes disponíveis</a></div>
 									</div>
 								</div>
 							</div> <!-- .container -->
@@ -191,49 +191,67 @@
 
 			<section class="widget row service-vertical-massive  " id="layers-widget-clinix_column_service-9">
 				<div class="row container list-grid">
-					<div id="layers-widget-clinix_column_service-9-450" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="alert('expandir informação');">
+					<div id="layers-widget-clinix_column_service-9-450" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="moreInfo(1);">
 						<div class="media no-push-bottom image-left medium">
 							<div class="media-image ">
 								<span style="font-size: 2em; color: #fff; font-weight: 700">1.</span>
 							</div>
 							<div class="media-body text-left">
 								<h5 class="heading">ENCONTRE O<br>TESTE DESEJADO</h5>
-								<div class="excerpt">Busque entre 571 genes e doenças atendidas.</div>
+								<div class="excerpt">Encontre o teste que você deseja e tenha todas as informações a respeito.</div>
 							</div>
 						</div>
 					</div>
-					<div id="layers-widget-clinix_column_service-9-17" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="alert('expandir informação');">
+					<div id="layers-widget-clinix_column_service-9-17" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="moreInfo(2);">
 						<div class="media no-push-bottom invert image-top medium">
 							<div class="media-image ">
 								<span style="font-size: 2em; color: #fff; font-weight: 700">2.</span>
 							</div>
 							<div class="media-body text-left">
-								<h5 class="heading">PREENCHA A<br>SOLICITAÇÃO</h5>
-								<div class="excerpt">Informe os dados clínicos do paciente.</div>
+								<h5 class="heading">SOLICITAÇÃO<br>DOS TESTES</h5>
+								<div class="excerpt">Preencha o formulário de requerimento e leia o termo de consentimento.</div>
 							</div>
 						</div>
 					</div>
-					<div id="layers-widget-clinix_column_service-9-155" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="alert('expandir informação');">
+					<div id="layers-widget-clinix_column_service-9-155" class="layers-masonry-column clinix-service span-3  column-flush service has-image" onclick="moreInfo(3);">
 						<div class="media no-push-bottom invert image-top medium">
 							<div class="media-image ">
 								<span style="font-size: 2em; color: #fff; font-weight: 700">3.</span>
 							</div>
 							<div class="media-body text-left">
-								<h5 class="heading">PREPARE E ENVIE<br>AS AMOSTRAS</h5>
-								<div class="excerpt">Envie por Sedex ou faça a coleta em nosso laboratório.</div>
+								<h5 class="heading">PREPARO E ENVIO<br>DAS AMOSTRAS</h5>
+								<div class="excerpt">Envie pelo correio, entregue pessoalmente, ou faça a coleta em nosso laboratório.</div>
 							</div>
 						</div>
 					</div>
-					<div id="layers-widget-clinix_column_service-9-721" class="layers-masonry-column clinix-service span-3 last  column-flush service has-image" onclick="alert('expandir informação');">
+					<div id="layers-widget-clinix_column_service-9-721" class="layers-masonry-column clinix-service span-3 last  column-flush service has-image" onclick="moreInfo(4);">
 						<div class="media no-push-bottom invert image-top medium">
 							<div class="media-image ">
 								<span style="font-size: 2em; color: #fff; font-weight: 700">4.</span>
 							</div>
 							<div class="media-body text-left">
-								<h5 class="heading">RECEBA OS RESULTADOS</h5>
-								<div class="excerpt">Receba os resultados por email e/ou pelos Correios.</div>
+								<h5 class="heading">ENTREGA DOS RESULTADOS</h5>
+								<div class="excerpt">O resultado do exame será entregue por correio e/ou e-mail ao médico solicitante.</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="row container list-grid">
+					<div id="more-info-1" class="more-info clinix-service span-12">
+						<ul>
+							<li><a href="">Veja lista completa de testes genéticos disponíveis</a></li>
+							<li><a href="">Veja a lista de testes realizados por NGS (**)</a></li>
+							<li><a href="">Saiba mais sobre a Metodologia Molecular dos Testes oferecidos</a></li>
+						</ul>
+					</div>
+					<div id="more-info-2" class="more-info clinix-service span-12" onmouseout="moreInfo(2);">
+						Os testes genéticos devem ser solicitados exclusivamente pelo médico responsável pelo paciente, mediante o PREENCHIMENTO COMPLETO do Formulário para Requerimento de Teste Genético, e Termo de Consentimento Adequado. Em caso de dúvidas, consulte o Modelo de Formulário preenchido.
+					</div>
+					<div id="more-info-3" class="more-info clinix-service span-12" onmouseout="moreInfo(3);">
+						As amostras de sangue para a realização dos exames podem ser coletadas em nosso laboratório, enviadas por Serviços de transporte rápido (SEDEX, etc) ou entregues pessoalmente na secretaria. Para informações sobre a coleta e/ou envio de material para exames, clique em Instruções para Coleta.
+					</div>
+					<div id="more-info-4" class="more-info clinix-service span-12" onmouseout="moreInfo(4);">
+						Apenas o médico solicitante poderá receber o resultado do exame.
 					</div>
 				</div>
 			</section>
@@ -250,6 +268,8 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .
 							<br><br>
 							<img src="./images/cegh-logo.png" style="width: 200px;">
+							<br><br>
+							<a href="sobre_nos.html" style="color:#375ebc; text-decoration:underline; font-weight: 600;">Saiba mais</a>
 						</div>
 						<!-- <a href="http://themeforest./" class="button btn-small">Read More</a> -->
 					</div>
@@ -450,6 +470,7 @@
  	#layers-widget-slide-5-575 { background-repeat: no-repeat;background-position: right;background-size: cover;background-image: url('./images/hero-image-1.jpg');}  #layers-widget-slide-5-575 h3.heading,  #layers-widget-slide-5-575  h3.heading a,  #layers-widget-slide-5-575  div.excerpt{ color: #274da8;}
  	#layers-widget-slide-5-278 { background-color: #efefef; background-repeat: no-repeat;background-position: 0px -70px;background-size: cover;background-image: url('./images/hero-image-2.png');} #layers-widget-slide-5-278 h3.heading,  #layers-widget-slide-5-278  h3.heading a,  #layers-widget-slide-5-278  div.excerpt{ color: #274da8;}  #layers-widget-clinix_column_service-9 { background-color: #fff; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_service-9-450 { background-color: #78BCEE; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_service-9-450 h5.heading a,  #layers-widget-clinix_column_service-9-450  h5.heading,  #layers-widget-clinix_column_service-9-450  div.excerpt,  #layers-widget-clinix_column_service-9-450  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_service-9-17 { background-color: #4CA5E8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_service-9-17 h5.heading a,  #layers-widget-clinix_column_service-9-17  h5.heading,  #layers-widget-clinix_column_service-9-17  div.excerpt,  #layers-widget-clinix_column_service-9-17  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_service-9-155 { background-color: #375ebc; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_service-9-155 h5.heading a,  #layers-widget-clinix_column_service-9-155  h5.heading,  #layers-widget-clinix_column_service-9-155  div.excerpt,  #layers-widget-clinix_column_service-9-155  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_service-9-721 { background-color: #274da8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_service-9-721 h5.heading a,  #layers-widget-clinix_column_service-9-721  h5.heading,  #layers-widget-clinix_column_service-9-721  div.excerpt,  #layers-widget-clinix_column_service-9-721  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_schedule-7 { padding-top: 20px; background-color: #eff2f5; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_schedule-7 { padding-bottom: 80px; }  #layers-widget-clinix_column_schedule-7-457 { background-color: #78BCEE; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_schedule-7-457 h5.heading a,  #layers-widget-clinix_column_schedule-7-457  h5.heading,  #layers-widget-clinix_column_schedule-7-457  div.excerpt,  #layers-widget-clinix_column_schedule-7-457  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_schedule-7-14 { background-color: #4ca5e8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_schedule-7-14 h5.heading a,  #layers-widget-clinix_column_schedule-7-14  h5.heading,  #layers-widget-clinix_column_schedule-7-14  div.excerpt,  #layers-widget-clinix_column_schedule-7-14  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_schedule-7-239 { background-color: #375ebc; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_schedule-7-239 h5.heading a,  #layers-widget-clinix_column_schedule-7-239  h5.heading,  #layers-widget-clinix_column_schedule-7-239  div.excerpt,  #layers-widget-clinix_column_schedule-7-239  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_schedule-7-489 { background-color: #274da8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_schedule-7-489 h5.heading a,  #layers-widget-clinix_column_schedule-7-489  h5.heading,  #layers-widget-clinix_column_schedule-7-489  div.excerpt,  #layers-widget-clinix_column_schedule-7-489  div.excerpt p{ color: #fff;}  #layers-widget-column-27 { background-repeat: no-repeat;background-position: center;background-image: url('http://xvelopers.com/wp/themes/clinix/wp-content/uploads/sites/13/2015/05/saude1.jpg');}  #layers-widget-column-27 .section-title h3.heading,  #layers-widget-column-27  .section-title p.excerpt{ color: #375ebc;}  #layers-widget-column-27 { padding-bottom: 80px; }  #layers-widget-column-27-910 { background-repeat: no-repeat;background-position: center;}  #layers-widget-column-27-882 { background-repeat: no-repeat;background-position: center;}  #layers-widget-column-27-316 { background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_testimonial-9 { background-color: #E4F2FC; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_testimonial-9 { padding-bottom: 80px; }  #layers-widget-clinix_column_testimonial-9-78 { background-color: #ffffff; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_testimonial-9-600 { background-color: #ffffff; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_testimonial-9-2 { background-color: #ffffff; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9 { background-color: #ffffff; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9 { padding-bottom: 100px; }  #layers-widget-clinix_column_team-9-228 { background-color: #78BCEE; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9-228 h5.heading a,  #layers-widget-clinix_column_team-9-228  h5.heading,  #layers-widget-clinix_column_team-9-228  div.excerpt,  #layers-widget-clinix_column_team-9-228  div.excerpt p{ color: #ffffff;}  #layers-widget-clinix_column_team-9-990 { background-color: #375ebc; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9-990 h5.heading a,  #layers-widget-clinix_column_team-9-990  h5.heading,  #layers-widget-clinix_column_team-9-990  div.excerpt,  #layers-widget-clinix_column_team-9-990  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_team-9-587 { background-color: #4ca5e8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9-587 h5.heading a,  #layers-widget-clinix_column_team-9-587  h5.heading,  #layers-widget-clinix_column_team-9-587  div.excerpt,  #layers-widget-clinix_column_team-9-587  div.excerpt p{ color: #fff;}  #layers-widget-clinix_column_team-9-369 { background-color: #274da8; background-repeat: no-repeat;background-position: center;}  #layers-widget-clinix_column_team-9-369 h5.heading a,  #layers-widget-clinix_column_team-9-369  h5.heading,  #layers-widget-clinix_column_team-9-369  div.excerpt,  #layers-widget-clinix_column_team-9-369  div.excerpt p{ color: #fff;}  #layers-widget-post-8 { padding-top: 50px; background-color: #fff;}  #layers-widget-post-8 .thumbnail:not(.with-overlay) .thumbnail-body{ background-color: #ffffff; }  #layers-widget-post-8 .thumbnail-body a.button{ background-color: #4ca5e8; color: #FFFFFF; }  #layers-widget-post-8 .thumbnail-body a.button:hover{ background-color: #82c0ef; color: #FFFFFF; }  #layers-widget-call2action-11 { background-color: #274da8; background-repeat: no-repeat;background-position: center;}
 </style>
+<script type="text/javascript" src="./javascripts/script.js"></script>
 <script type="text/javascript" src="./prototipo_files/core.min.js"></script>
 <script type="text/javascript" src="./prototipo_files/jquery.blockUI.min.js"></script>
 <script type="text/javascript" src="./prototipo_files/jquery.cookie.min.js"></script>

@@ -184,10 +184,10 @@ border-bottom: 1px solid #f3f3f3;
     height: 5px;
     left: 0;
     bottom: -5px;
-    background: url(pattern.png) no-repeat center center;
+    background: url(../images/pattern.png) no-repeat center center;
 }
 .title-container {
-    background: url(bg.jpg);
+    background: url(../images/bg.jpg);
 }
 
 .social li {
@@ -358,6 +358,30 @@ border-bottom: 1px solid #f3f3f3;
     max-width: 170px;
     position: relative;
     margin-bottom: 20px;
+}
+
+.more-info {
+    color: #fff;
+    display: none;
+}
+.more-info li {
+    margin-bottom: 8px;
+}
+.more-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+.more-info#more-info-1 {
+    background-color: #78BCEE;
+}
+.more-info#more-info-2 {
+    background-color: #4CA5E8;
+}
+.more-info#more-info-3 {
+    background-color: #375ebc;
+}
+.more-info#more-info-4 {
+    background-color: #274da8;
 }
 
 .section-title {
@@ -581,7 +605,7 @@ border-bottom: 1px solid #f3f3f3;
     color: #777;
 }
 .copyright::after{
-  background: url("pattern.png") no-repeat scroll center center rgba(0, 0, 0, 0) !important;
+  background: url("../images/pattern.png") no-repeat scroll center center rgba(0, 0, 0, 0) !important;
     top: 0px;
     content: "";
     height: 5px;
@@ -1028,4 +1052,23 @@ table th{
     .slide  .heading::after{
         background: none;
     }
+}
+
+
+/*
+| ----------------------------------------------------------------------------------------------
+| 10 : Site Pages
+| ----------------------------------------------------------------------------------------------
+*/
+.site-pages {
+    background-color: #FBFBFB;
+    padding: 50px 0;
+}
+
+.site-pages h3, .site-pages h5 {
+    margin-bottom: 20px;
+}
+
+.pages p {
+    margin-bottom: 15px;
 }
