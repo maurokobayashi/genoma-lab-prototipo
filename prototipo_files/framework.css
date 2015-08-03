@@ -420,7 +420,7 @@ object{
     .responsive-nav{
         float: right;
         padding: 0;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 10px;
     }
     .responsive-nav .l-menu{
         display: block;
@@ -1532,7 +1532,7 @@ object{
         font-weight: 700;
     }
     .site-logo-link + .site-description .sitename{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .tagline{
         font-size: 1.2rem;
@@ -1548,7 +1548,7 @@ object{
     .site-logo-link img,
     .mark img{
         display: inline-block;
-        max-height: 40px;
+        max-height: 30px;
         margin: auto;
         width: auto;
     }

@@ -32,6 +32,7 @@ body {
     font: 14px "Open Sans", Arial, Helvetica, sans-serif;
     color: #696969;
 }
+
 h1, h2, h3, h4, h5, .heading{
     font-weight: 600;
     color: #375ebc;
@@ -64,10 +65,8 @@ pre {
 input[type="button"], input[type="submit"], button, .button, .form-submit input[type="submit"], .invert input[type="button"], .invert input[type="submit"], .invert button, .invert .button, .invert .form-submit input[type="submit"] {
     background-color: #375EBC !important;
     color: #fff !important;
-     font-weight: normal;
-
-       padding: 8px 18px;
-
+    font-weight: normal;
+    padding: 8px 18px;
 }
 
 .center {
@@ -314,6 +313,8 @@ border-bottom: 1px solid #f3f3f3;
     text-decoration: underline;
 }
 
+.header-site, .header-site.header-sticky { background-color: rgba(255, 255, 255, 1); }  .footer-site { background-color: #FBFBFB; }  .title-container { background-color: #ffffff; } input[type="button"],  input[type="submit"],  button,  .button,  .form-submit input[type="submit"],  .invert input[type="button"],  .invert input[type="submit"],  .invert button,  .invert .button,  .invert .form-submit input[type="submit"]{ background-color: #375EBC; color: #FFFFFF; } input[type="button"]:hover,  input[type="submit"]:hover,  button:hover,  .button:hover,  .form-submit input[type="submit"]:hover,  .invert input[type="button"]:hover,  .invert input[type="submit"]:hover,  .invert button:hover,  .invert .button:hover,  .invert .form-submit input[type="submit"]:hover{ background-color: #738ed0; color: #FFFFFF; } .copy a:not(.button),  .story a:not(.button){ color: #375EBC;border-bottom-color: #375EBC;} .copy a:not(.button):hover,  .story a:not(.button):hover{ color: #738ed0;border-bottom-color: #738ed0;}
+
 /*
 | ----------------------------------------------------------------------------------------------
 | 4 : Clinix Widgets
@@ -405,8 +406,8 @@ border-bottom: 1px solid #f3f3f3;
 }
 
 .layers-call2action-widget {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-bottom: 25px;
 }
 .layers-call2action-widget .heading::after{
     display: none !important;
@@ -1061,7 +1062,8 @@ table th{
 | ----------------------------------------------------------------------------------------------
 */
 .site-pages {
-    background-color: #FBFBFB;
+    /*background-color: #FBFBFB;*/
+    background-color: #fff;
     padding: 50px 0;
 }
 
@@ -1069,6 +1071,6 @@ table th{
     margin-bottom: 20px;
 }
 
-.pages p {
+.site-pages p {
     margin-bottom: 15px;
 }
